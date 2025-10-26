@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vòng Quay Lì Xì May Mắn</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎡 Vòng Quay Lì Xì May Mắn 🎁</h1>
+
+    <div class="wheel-container">
+      <canvas id="wheel" width="300" height="300"></canvas>
+      <button id="spinBtn">Quay Ngay!</button>
+    </div>
+
+    <div class="input-section">
+      <h2>🎁 Thêm Người Nhận Lì Xì</h2>
+      <input type="text" id="nameInput" placeholder="Tên người nhận..." />
+      <input type="text" id="giftInput" placeholder="Tên quà (nếu có)..." />
+      <button id="addBtn">Thêm</button>
+    </div>
+
+    <div class="list-section">
+      <h2>🧧 Danh Sách Người Nhận</h2>
+      <ul id="recipientList"></ul>
+    </div>
+
+    <button id="resetBtn" class="reset">Làm Mới</button>
+  </div>
+
+  <audio id="spinSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_aa3cbfdb30.mp3?filename=wheel-spin-110861.mp3" preload="auto"></audio>
+  <audio id="winSound" src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_19d7cb07e4.mp3?filename=success-fanfare-trumpets-6185.mp3" preload="auto"></audio>
+
+  <canvas id="fireworks"></canvas>
+
+  <script src="script.js"></script>
+</body>
+</html>
